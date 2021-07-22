@@ -1,0 +1,15 @@
+@each $margin in $margins {
+  @each $sizeName, $size in $sizes {
+	.u-#{$margin}-#{$sizeName} {
+	  #{$margin}: $size;
+	}
+  }
+}
+
+@each $padding in $paddings {
+  @each $sizeName, $size in $sizes {
+	.u-#{$padding}-#{$sizeName} {
+	  #{$padding}: $size;
+	}
+  }
+}
